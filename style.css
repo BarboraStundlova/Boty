@@ -1,0 +1,149 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+
+.zbozi {
+    display: flex;
+    border:0px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #888888;
+    width: 670px;
+    height: 440px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    
+}
+
+.vizual {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#06d7c1,#50cc49);
+    border-radius: 10px 0px 0 10px;
+    position: relative;
+    height: 100%;
+}
+
+.detaily {
+    flex-basis: 50%;
+    margin-left: 30px;
+    margin-top: 0;
+    height: 100%;
+
+}
+
+.bota {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+.logo,
+.slogan {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.slogan {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cenovka {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    text-align: right;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.zaruka {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nazev {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.produkt {
+    color: grey;
+}
+
+.popis {
+    margin-right: 10px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #06d7c1;
+}
+.parametr {
+    margin-top: 30px;
+}
+
+.velikosti {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 30px;
+    align-items: center;
+    padding:0;
+    }
+
+.vybrana {
+    color: coral;
+    border: 1px solid coral;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    background-color: coral;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border:1px solid coral ;
+    position: absolute;
+    bottom:50px;
+
+}
+
+a:hover {
+    background-color: white;
+    color: coral;
+
+}
+
